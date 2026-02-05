@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dotfile.sg - Interview</title>
+  <meta name="description" content="AI Agent Architect Intern Interview - dotfile.sg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      padding: 20px;
+    }
+    .container {
+      text-align: center;
+      max-width: 500px;
+      margin-bottom: 2rem;
+    }
+    .logo {
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+    p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    .checklist {
+      text-align: left;
+      margin: 1.5rem auto;
+      max-width: 300px;
+    }
+    .checklist li {
+      list-style: none;
+      padding: 0.4rem 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.95rem;
+    }
+    .checklist li::before {
+      content: "✓";
+      font-weight: bold;
+    }
+    .widget-container {
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+      min-height: 400px;
+      width: 100%;
+      max-width: 400px;
+    }
+    .note {
+      margin-top: 1.5rem;
+      font-size: 0.85rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">dotfile.sg</div>
+    <h1>👋 Welcome!</h1>
+    <p>You'll be speaking with Scout, our AI recruiter. This is a quick 5-10 minute conversation.</p>
+    
+    <ul class="checklist">
+      <li>Allow microphone access</li>
+      <li>Find a quiet space</li>
+      <li>Speak naturally!</li>
+    </ul>
+  </div>
+  
+  <div class="widget-container">
+    <elevenlabs-convai agent-id="agent_5601kgp1ajdfe129tdzxme5t1a0t"></elevenlabs-convai>
+  </div>
+  
+  <p class="note">Powered by AI • Takes ~5-10 minutes</p>
+  
+  <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+</body>
+</html>
